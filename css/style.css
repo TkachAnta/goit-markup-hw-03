@@ -8,12 +8,44 @@
     --color-cloud: #F4F4FD;
 }
 
+h1,
+h2, 
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
 .body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
     background: var(--primary-white-color);
+}
+
+.container {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-container {
+    display: flex;
+    align-items: center;
 }
 
 .list {
@@ -34,10 +66,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-iris);
+    padding-left: 156px;
 }
 
 .logotype {
     color: var(--color-navy-blue);
+    margin-right: 76px;
 }
 
 .menu-link {
@@ -60,10 +94,26 @@
     font-style: normal;
 }
 
+.address {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 72px;
+}
+
 /*HERO*/
 
 .hero {
     background-color: var(--color-navy-blue);
+    height: 600px;
 }
 
 .page-hero {
@@ -71,6 +121,8 @@
     line-height: 1.07;
     font-weight: 700;
     color: var(--primary-color-white);
+    position: absolute;
+    padding: 188px 492px 292px;
 }
 
 .btn-page-hero {
