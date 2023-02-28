@@ -29,7 +29,7 @@ img {
     height: auto;
 }
 
-.body {
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -44,9 +44,9 @@ img {
     padding-right: 15px;
 }
 
-.fon {
+/*.fon {
     width: 1440px;
-}
+}*/
 
 .page-container {
     display: flex;
@@ -102,7 +102,6 @@ img {
 
 .address {
     margin-left: auto;
-    margin-right: 40px;
 }
 
 .menu-item:not(:last-child) {
@@ -112,6 +111,7 @@ img {
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-copnflower);
 }
 
 /*HERO*/
@@ -128,20 +128,20 @@ img {
     color: var(--primary-color-white);
     margin-bottom: 48px;
     padding-top: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
+    padding-left: 236px;
+    padding-right: 236px;
 }
 
 .btn-page-hero {
     background: var(--color-iris);
     color: var(--primary-color-white);
-    width: 169px;
-    height: 56px;
     font-weight: 500;
     letter-spacing: 0.04em;
     cursor: pointer;
     font-family: inherit;
+    padding: 16px 32px;
     margin-bottom: 188px;
+    border: none;
 }
 
 .btn-page-hero:hover,
@@ -177,10 +177,10 @@ img {
 }
 
 .card {
-    margin-right: 24px;;
+    margin-right: 24px;
 }
 
-.card:nth-child(3n) {
+.card:last-child {
     margin-right: 0;
 }
 
@@ -224,7 +224,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+}
+
+.card-our-team {
     flex-basis: calc((100% - 72px) / 4);
+    text-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .section {
@@ -269,12 +273,11 @@ img {
     letter-spacing: 0.04em;
     color: var(--color-iris);
     background-color: var(--color-cloud);
-    width: 116px;
-    height: 48px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     cursor: pointer;
     font-family: inherit;   
+    padding: 12px 24px;
 }
 
 .menu-btn {
@@ -310,12 +313,13 @@ img {
 }
 
 .page-galery > .card-galery {
-    flex-basis: calc(100% / 3 - 24px);
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .content {
     padding: 32px 0px;
     border: 1px solid var(--color-copnflower);
+    border-top: none;
 }
 
 .cards-galery {
